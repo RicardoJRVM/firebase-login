@@ -1,0 +1,15 @@
+<h1>REGISTRO DE USUARIO</h1>
+<form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" id="password" formControlName="password">
+  </div>
+  <button type="submit">Register</button>
+</form>
+<hr><br>
+
+<button class="btn-outline-danger" (click)="login()">Go to Login</button>
